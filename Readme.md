@@ -1,18 +1,23 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128604040/13.2.6%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E933)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-
-* [XtraReport1.cs](./CS/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/XtraReport1.vb))
-<!-- default file list end -->
-# How to use the appearance settings of report elements
+# Reporting for WinForms - Appearance Settings, Styles, Style Priority
 
 
-<p>This example demonstrates how to assign <a href="http://documentation.devexpress.com/#XtraReports/CustomDocument5165"><u>custom appearance settings</u></a> (e.g., <strong>BackColor</strong>, <strong>ForeColor</strong>, <strong>Borders</strong>, <strong>Font</strong>, etc.) to report elements and reset them to their default values, as well as how to make a control ignore its personal appearance settings in favor of the settings of its parent control.</p>
+This example shows a report with the following labels:
 
-<br/>
+- a label with appearance setting applied using a custom style
+- a label with appearance settings assigned directly in code
+- a label with appearance settings reset, so that the label takes appearance settings of the parent element 
+
+![Report Styles and Priority](Images/screenshot.png)
+
+## Files to Review
+
+* [XtraReport1.cs](CS/XtraReport1.cs) (VB: [XtraReport1.vb](VB/XtraReport1.vb))
+
+## Documentation
+
+- [Customize Appearance](https://docs.devexpress.com/XtraReports/2614/detailed-guide-to-devexpress-reporting/customize-appearance)
 
 
+## More Examples
+
+- [How to create and store report style sheets](https://github.com/DevExpress-Examples/Reporting_how-to-create-and-store-report-style-sheets-e486)

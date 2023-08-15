@@ -1,4 +1,4 @@
-Namespace ResetControlStyle
+Namespace ResetControlStyleExample
 
     Partial Class Form1
 
@@ -19,7 +19,7 @@ Namespace ResetControlStyle
             MyBase.Dispose(disposing)
         End Sub
 
-'#Region "Windows Form Designer generated code"
+        '#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -36,11 +36,11 @@ Namespace ResetControlStyle
             Me.button1.TabIndex = 0
             Me.button1.Text = "Preview the Report"
             Me.button1.UseVisualStyleBackColor = True
-            AddHandler Me.button1.Click, New System.EventHandler(AddressOf Me.button1_Click)
+            AddHandler Me.button1.Click, New System.EventHandler(AddressOf Me.Button1_Click)
             ' 
             ' Form1
             ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0F, 13.0F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(284, 264)
             Me.Controls.Add(Me.button1)
@@ -50,7 +50,7 @@ Namespace ResetControlStyle
             Me.ResumeLayout(False)
         End Sub
 
-'#End Region
+        '#End Region
         Private button1 As System.Windows.Forms.Button
     End Class
 End Namespace

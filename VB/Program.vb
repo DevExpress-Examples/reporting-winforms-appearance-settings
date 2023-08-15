@@ -1,7 +1,7 @@
 Imports System
 Imports System.Windows.Forms
 
-Namespace ResetControlStyle
+Namespace ResetControlStyleExample
 
     Friend Module Program
 

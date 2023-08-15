@@ -1,44 +1,43 @@
-namespace ResetControlStyle {
-    partial class XtraReport1 {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+partial class XtraReport1 {
+    /// <summary>
+    /// Required designer variable.
+    /// </summary>
+    private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
+    /// <summary> 
+    /// Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing) {
+        if (disposing && (components != null)) {
+            components.Dispose();
         }
+        base.Dispose(disposing);
+    }
 
-        #region Designer generated code
+    #region Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent() {
+    /// <summary>
+    /// Required method for Designer support - do not modify
+    /// the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent() {
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
             this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
             // 
-            this.Detail.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel2,
             this.xrLabel1,
             this.xrLabel3});
-            this.Detail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Detail.Font = new DevExpress.Drawing.DXFont("Segoe UI", 12F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point, new DevExpress.Drawing.DXFontAdditionalProperty[] {
+            new DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", ((byte)(0)))});
             this.Detail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.Detail.HeightF = 270.9167F;
             this.Detail.Name = "Detail";
@@ -49,16 +48,6 @@ namespace ResetControlStyle {
             this.Detail.StylePriority.UsePadding = false;
             this.Detail.StylePriority.UseTextAlignment = false;
             this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.BackColor = System.Drawing.Color.Empty;
-            this.xrLabel3.BorderColor = System.Drawing.Color.Empty;
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 195.9167F);
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(629.9998F, 75F);
-            this.xrLabel3.Text = "The appearance settings of this label are restored to their default values.";
-            this.xrLabel3.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrLabel3_BeforePrint);
             // 
             // xrLabel2
             // 
@@ -76,8 +65,8 @@ namespace ResetControlStyle {
             this.xrLabel2.StylePriority.UseForeColor = false;
             this.xrLabel2.StylePriority.UsePadding = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "This label carries its personal appearance settings that are assigned in code.";
-            this.xrLabel2.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrLabel2_BeforePrint);
+            this.xrLabel2.Text = "This label has its appearance settings assigned in code.";
+            this.xrLabel2.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.XrLabel2_BeforePrint);
             // 
             // xrLabel1
             // 
@@ -95,7 +84,19 @@ namespace ResetControlStyle {
             this.xrLabel1.StylePriority.UseForeColor = false;
             this.xrLabel1.StylePriority.UsePadding = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "This label receives its appearance settings from its parent (the Detail band).";
+            this.xrLabel1.Text = "This label receives its appearance settings from the MyStyle1 style.";
+            this.xrLabel1.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.xrLabel1_BeforePrint);
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.BackColor = System.Drawing.Color.Empty;
+            this.xrLabel3.BorderColor = System.Drawing.Color.Empty;
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 195.9167F);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(629.9998F, 75F);
+            this.xrLabel3.Text = "The appearance settings of this label are reset to the parent control (DetailBand" +
+    ") settings.";
+            this.xrLabel3.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.XrLabel3_BeforePrint);
             // 
             // topMarginBand1
             // 
@@ -112,18 +113,17 @@ namespace ResetControlStyle {
             this.Detail,
             this.topMarginBand1,
             this.bottomMarginBand1});
-            this.Version = "13.2";
+            this.Version = "23.1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
-        }
-
-        #endregion
-
-        private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
-        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
     }
+
+    #endregion
+
+    private DevExpress.XtraReports.UI.DetailBand Detail;
+    private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+    private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+    private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+    private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+    private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
 }
