@@ -47,7 +47,7 @@ Partial Public Class XtraReport1
 		label.TextAlignment = TextAlignment.MiddleRight
 	End Sub
 
-	' Reset appearance settings and use the parent control's settings.
+	' Reset appearance settings and use the parent control settings.
 	Private Sub ResetStyle(ByVal label As XRLabel)
 		label.ResetBackColor()
 		label.ResetBorderColor()

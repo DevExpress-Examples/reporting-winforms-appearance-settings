@@ -47,7 +47,7 @@ public partial class XtraReport1 : XtraReport {
         label.TextAlignment = TextAlignment.MiddleRight;
     }
 
-    // Reset appearance settings and use parent control's settings.
+    // Reset appearance settings and use parent control settings.
     private void ResetStyle(XRLabel label) {
         label.ResetBackColor();
         label.ResetBorderColor();
