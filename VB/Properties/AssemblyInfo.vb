@@ -4,12 +4,12 @@ Imports System.Runtime.InteropServices
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly:AssemblyTitle("ResetControlStyle")>
+<Assembly:AssemblyTitle("ResetControlStyleExample")>
 <Assembly:AssemblyDescription("")>
 <Assembly:AssemblyConfiguration("")>
 <Assembly:AssemblyCompany("")>
-<Assembly:AssemblyProduct("ResetControlStyle")>
-<Assembly:AssemblyCopyright("Copyright ©  2008")>
+<Assembly:AssemblyProduct("ResetControlStyleExample")>
+<Assembly:AssemblyCopyright("")>
 <Assembly:AssemblyTrademark("")>
 <Assembly:AssemblyCulture("")>
 ' Setting ComVisible to false makes the types in this assembly not visible 

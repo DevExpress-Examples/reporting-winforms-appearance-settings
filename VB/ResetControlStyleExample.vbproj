@@ -9,7 +9,8 @@
     <ProjectGuid>{0312A8EB-70AD-420C-B768-DE6A9E6880F2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ResetControlStyleExample</RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>ResetControlStyleExample</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -139,7 +140,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
-      <CustomToolNamespace>ResetControlStyle.Properties</CustomToolNamespace>
+      <CustomToolNamespace>ResetControlStyleExample.Properties</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraReport1.resx">
       <SubType>Designer</SubType>

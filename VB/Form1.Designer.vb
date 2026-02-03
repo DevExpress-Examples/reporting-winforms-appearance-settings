@@ -19,7 +19,7 @@ Namespace ResetControlStyleExample
             MyBase.Dispose(disposing)
         End Sub
 
-        '#Region "Windows Form Designer generated code"
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -40,7 +40,7 @@ Namespace ResetControlStyleExample
             ' 
             ' Form1
             ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0F, 13.0F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(284, 264)
             Me.Controls.Add(Me.button1)
@@ -50,7 +50,7 @@ Namespace ResetControlStyleExample
             Me.ResumeLayout(False)
         End Sub
 
-        '#End Region
+#End Region
         Private button1 As System.Windows.Forms.Button
     End Class
 End Namespace

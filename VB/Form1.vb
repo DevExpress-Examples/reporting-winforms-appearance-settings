@@ -5,7 +5,7 @@ Imports DevExpress.XtraReports.UI
 ' ...
 Namespace ResetControlStyleExample
 
-    Partial Public Class Form1
+    Public Partial Class Form1
         Inherits Form
 
         Public Sub New()
